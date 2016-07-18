@@ -1,0 +1,808 @@
+[18/Jul/2016 10:03:07] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYabHRSbnb4ulEdc8rfNOe",\n  "object": "charge",\n  "amount": 100,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYacHRSbnb4ulE0L9AppoV",\n  "captured": true,\n  "created": 1468836185,\n  "currency": "usd",\n  "customer": "cus_8qF42siLXhvWjR",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYabHRSbnb4ulEdc8rfNOe/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYaaHRSbnb4ulE5RhmynxS",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qF42siLXhvWjR",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:03:07] INFO [accounts.views:39] charge {
+  "amount": 100, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYacHRSbnb4ulE0L9AppoV", 
+  "captured": true, 
+  "created": 1468836185, 
+  "currency": "usd", 
+  "customer": "cus_8qF42siLXhvWjR", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYabHRSbnb4ulEdc8rfNOe", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYabHRSbnb4ulEdc8rfNOe/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qF42siLXhvWjR", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYaaHRSbnb4ulE5RhmynxS", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:03:07] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:03:08] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:03:08] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:03:08] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYacHRSbnb4ulEIqlQSquj",\n  "object": "charge",\n  "amount": 200,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYadHRSbnb4ulEFHTcLSTL",\n  "captured": true,\n  "created": 1468836186,\n  "currency": "usd",\n  "customer": "cus_8qF42siLXhvWjR",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYacHRSbnb4ulEIqlQSquj/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYaaHRSbnb4ulE5RhmynxS",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qF42siLXhvWjR",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:03:08] INFO [accounts.views:47] charge_two {
+  "amount": 200, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYadHRSbnb4ulEFHTcLSTL", 
+  "captured": true, 
+  "created": 1468836186, 
+  "currency": "usd", 
+  "customer": "cus_8qF42siLXhvWjR", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYacHRSbnb4ulEIqlQSquj", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYacHRSbnb4ulEIqlQSquj/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qF42siLXhvWjR", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYaaHRSbnb4ulE5RhmynxS", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:03:09] INFO [accounts.views:83] Handling login GET request
+[18/Jul/2016 10:05:36] INFO [accounts.views:16] Handling register GET request
+[18/Jul/2016 10:05:36] WARNING [py.warnings:89] /Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django_forms_bootstrap/templatetags/bootstrap_tags.py:28: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(c)
+
+[18/Jul/2016 10:05:55] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:06:02] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:06:02] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:06:03] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/customers HTTP/1.1" 200 1397
+[18/Jul/2016 10:06:03] INFO [stripe:252] POST https://api.stripe.com/v1/customers 200
+[18/Jul/2016 10:06:03] DEBUG [stripe:256] API request to https://api.stripe.com/v1/customers returned (response code, response body) of (200, '{\n  "id": "cus_8qF7SKY7D31w8g",\n  "object": "customer",\n  "account_balance": 0,\n  "created": 1468836361,\n  "currency": null,\n  "default_source": "card_18YYdQHRSbnb4ulEf16FUDfP",\n  "delinquent": false,\n  "description": "me45@me.com",\n  "discount": null,\n  "email": "me45@me.com",\n  "livemode": false,\n  "metadata": {},\n  "shipping": null,\n  "sources": {\n    "object": "list",\n    "data": [\n      {\n        "id": "card_18YYdQHRSbnb4ulEf16FUDfP",\n        "object": "card",\n        "address_city": null,\n        "address_country": null,\n        "address_line1": null,\n        "address_line1_check": null,\n        "address_line2": null,\n        "address_state": null,\n        "address_zip": null,\n        "address_zip_check": null,\n        "brand": "Visa",\n        "country": "US",\n        "customer": "cus_8qF7SKY7D31w8g",\n        "cvc_check": "pass",\n        "dynamic_last4": null,\n        "exp_month": 1,\n        "exp_year": 2017,\n        "fingerprint": "FJcN215VFRWzooHH",\n        "funding": "credit",\n        "last4": "4242",\n        "metadata": {},\n        "name": null,\n        "tokenization_method": null\n      }\n    ],\n    "has_more": false,\n    "total_count": 1,\n    "url": "/v1/customers/cus_8qF7SKY7D31w8g/sources"\n  },\n  "subscriptions": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/customers/cus_8qF7SKY7D31w8g/subscriptions"\n  }\n}\n')
+[18/Jul/2016 10:06:03] INFO [accounts.views:29] customer {
+  "account_balance": 0, 
+  "created": 1468836361, 
+  "currency": null, 
+  "default_source": "card_18YYdQHRSbnb4ulEf16FUDfP", 
+  "delinquent": false, 
+  "description": "me45@me.com", 
+  "discount": null, 
+  "email": "me45@me.com", 
+  "id": "cus_8qF7SKY7D31w8g", 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "customer", 
+  "shipping": null, 
+  "sources": {
+    "data": [
+      {
+        "address_city": null, 
+        "address_country": null, 
+        "address_line1": null, 
+        "address_line1_check": null, 
+        "address_line2": null, 
+        "address_state": null, 
+        "address_zip": null, 
+        "address_zip_check": null, 
+        "brand": "Visa", 
+        "country": "US", 
+        "customer": "cus_8qF7SKY7D31w8g", 
+        "cvc_check": "pass", 
+        "dynamic_last4": null, 
+        "exp_month": 1, 
+        "exp_year": 2017, 
+        "fingerprint": "FJcN215VFRWzooHH", 
+        "funding": "credit", 
+        "id": "card_18YYdQHRSbnb4ulEf16FUDfP", 
+        "last4": "4242", 
+        "metadata": {}, 
+        "name": null, 
+        "object": "card", 
+        "tokenization_method": null
+      }
+    ], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 1, 
+    "url": "/v1/customers/cus_8qF7SKY7D31w8g/sources"
+  }, 
+  "subscriptions": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/customers/cus_8qF7SKY7D31w8g/subscriptions"
+  }
+}
+[18/Jul/2016 10:06:03] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:06:04] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:06:04] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:06:04] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYdSHRSbnb4ulE66ulEAim",\n  "object": "charge",\n  "amount": 100,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYdTHRSbnb4ulEEt3O1Mn6",\n  "captured": true,\n  "created": 1468836362,\n  "currency": "usd",\n  "customer": "cus_8qF7SKY7D31w8g",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYdSHRSbnb4ulE66ulEAim/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYdQHRSbnb4ulEf16FUDfP",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qF7SKY7D31w8g",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:06:04] INFO [accounts.views:41] charge {
+  "amount": 100, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYdTHRSbnb4ulEEt3O1Mn6", 
+  "captured": true, 
+  "created": 1468836362, 
+  "currency": "usd", 
+  "customer": "cus_8qF7SKY7D31w8g", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYdSHRSbnb4ulE66ulEAim", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYdSHRSbnb4ulE66ulEAim/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qF7SKY7D31w8g", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYdQHRSbnb4ulEf16FUDfP", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:06:04] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:06:05] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:06:05] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:06:05] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYdUHRSbnb4ulEwN56bU8O",\n  "object": "charge",\n  "amount": 200,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYdUHRSbnb4ulE3luXEGSz",\n  "captured": true,\n  "created": 1468836364,\n  "currency": "usd",\n  "customer": "cus_8qF7SKY7D31w8g",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYdUHRSbnb4ulEwN56bU8O/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYdQHRSbnb4ulEf16FUDfP",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qF7SKY7D31w8g",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:06:05] INFO [accounts.views:49] charge_two {
+  "amount": 200, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYdUHRSbnb4ulE3luXEGSz", 
+  "captured": true, 
+  "created": 1468836364, 
+  "currency": "usd", 
+  "customer": "cus_8qF7SKY7D31w8g", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYdUHRSbnb4ulEwN56bU8O", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYdUHRSbnb4ulEwN56bU8O/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qF7SKY7D31w8g", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYdQHRSbnb4ulEf16FUDfP", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:06:06] INFO [accounts.views:85] Handling login GET request
+[18/Jul/2016 10:08:24] INFO [accounts.views:16] Handling register GET request
+[18/Jul/2016 10:08:24] WARNING [py.warnings:89] /Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django_forms_bootstrap/templatetags/bootstrap_tags.py:28: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(c)
+
+[18/Jul/2016 10:08:41] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:08:41] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:08:42] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/customers HTTP/1.1" 200 1397
+[18/Jul/2016 10:08:42] INFO [stripe:252] POST https://api.stripe.com/v1/customers 200
+[18/Jul/2016 10:08:42] DEBUG [stripe:256] API request to https://api.stripe.com/v1/customers returned (response code, response body) of (200, '{\n  "id": "cus_8qFAYuPAi6oInP",\n  "object": "customer",\n  "account_balance": 0,\n  "created": 1468836521,\n  "currency": null,\n  "default_source": "card_18YYg0HRSbnb4ulEf2NHhDaY",\n  "delinquent": false,\n  "description": "me45@me.com",\n  "discount": null,\n  "email": "me45@me.com",\n  "livemode": false,\n  "metadata": {},\n  "shipping": null,\n  "sources": {\n    "object": "list",\n    "data": [\n      {\n        "id": "card_18YYg0HRSbnb4ulEf2NHhDaY",\n        "object": "card",\n        "address_city": null,\n        "address_country": null,\n        "address_line1": null,\n        "address_line1_check": null,\n        "address_line2": null,\n        "address_state": null,\n        "address_zip": null,\n        "address_zip_check": null,\n        "brand": "Visa",\n        "country": "US",\n        "customer": "cus_8qFAYuPAi6oInP",\n        "cvc_check": "pass",\n        "dynamic_last4": null,\n        "exp_month": 1,\n        "exp_year": 2017,\n        "fingerprint": "FJcN215VFRWzooHH",\n        "funding": "credit",\n        "last4": "4242",\n        "metadata": {},\n        "name": null,\n        "tokenization_method": null\n      }\n    ],\n    "has_more": false,\n    "total_count": 1,\n    "url": "/v1/customers/cus_8qFAYuPAi6oInP/sources"\n  },\n  "subscriptions": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/customers/cus_8qFAYuPAi6oInP/subscriptions"\n  }\n}\n')
+[18/Jul/2016 10:08:42] INFO [accounts.views:29] customer {
+  "account_balance": 0, 
+  "created": 1468836521, 
+  "currency": null, 
+  "default_source": "card_18YYg0HRSbnb4ulEf2NHhDaY", 
+  "delinquent": false, 
+  "description": "me45@me.com", 
+  "discount": null, 
+  "email": "me45@me.com", 
+  "id": "cus_8qFAYuPAi6oInP", 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "customer", 
+  "shipping": null, 
+  "sources": {
+    "data": [
+      {
+        "address_city": null, 
+        "address_country": null, 
+        "address_line1": null, 
+        "address_line1_check": null, 
+        "address_line2": null, 
+        "address_state": null, 
+        "address_zip": null, 
+        "address_zip_check": null, 
+        "brand": "Visa", 
+        "country": "US", 
+        "customer": "cus_8qFAYuPAi6oInP", 
+        "cvc_check": "pass", 
+        "dynamic_last4": null, 
+        "exp_month": 1, 
+        "exp_year": 2017, 
+        "fingerprint": "FJcN215VFRWzooHH", 
+        "funding": "credit", 
+        "id": "card_18YYg0HRSbnb4ulEf2NHhDaY", 
+        "last4": "4242", 
+        "metadata": {}, 
+        "name": null, 
+        "object": "card", 
+        "tokenization_method": null
+      }
+    ], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 1, 
+    "url": "/v1/customers/cus_8qFAYuPAi6oInP/sources"
+  }, 
+  "subscriptions": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/customers/cus_8qFAYuPAi6oInP/subscriptions"
+  }
+}
+[18/Jul/2016 10:08:42] INFO [accounts.views:31] customer.stripe_id = cus_8qFAYuPAi6oInP
+[18/Jul/2016 10:08:42] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:08:44] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:08:44] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:08:44] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYg2HRSbnb4ulEMdCz4Dzg",\n  "object": "charge",\n  "amount": 100,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYg2HRSbnb4ulEvlnUkrxN",\n  "captured": true,\n  "created": 1468836522,\n  "currency": "usd",\n  "customer": "cus_8qFAYuPAi6oInP",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYg2HRSbnb4ulEMdCz4Dzg/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYg0HRSbnb4ulEf2NHhDaY",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qFAYuPAi6oInP",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:08:44] INFO [accounts.views:41] charge {
+  "amount": 100, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYg2HRSbnb4ulEvlnUkrxN", 
+  "captured": true, 
+  "created": 1468836522, 
+  "currency": "usd", 
+  "customer": "cus_8qFAYuPAi6oInP", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYg2HRSbnb4ulEMdCz4Dzg", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYg2HRSbnb4ulEMdCz4Dzg/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qFAYuPAi6oInP", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYg0HRSbnb4ulEf2NHhDaY", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:08:44] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:08:45] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:08:45] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:08:45] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYg3HRSbnb4ulE3PXQA9jT",\n  "object": "charge",\n  "amount": 200,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYg3HRSbnb4ulEYR3ErRox",\n  "captured": true,\n  "created": 1468836523,\n  "currency": "usd",\n  "customer": "cus_8qFAYuPAi6oInP",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYg3HRSbnb4ulE3PXQA9jT/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYg0HRSbnb4ulEf2NHhDaY",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qFAYuPAi6oInP",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:08:45] INFO [accounts.views:49] charge_two {
+  "amount": 200, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYg3HRSbnb4ulEYR3ErRox", 
+  "captured": true, 
+  "created": 1468836523, 
+  "currency": "usd", 
+  "customer": "cus_8qFAYuPAi6oInP", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYg3HRSbnb4ulE3PXQA9jT", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYg3HRSbnb4ulE3PXQA9jT/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qFAYuPAi6oInP", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYg0HRSbnb4ulEf2NHhDaY", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:08:45] ERROR [django.request:284] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/src/DjangoStripePayments/accounts/views.py", line 55, in register
+    form.save()
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/src/DjangoStripePayments/accounts/forms.py", line 50, in save
+    instance.save()
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: accounts_user.username
+[18/Jul/2016 10:08:45] ERROR [django.request:284] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/src/DjangoStripePayments/accounts/views.py", line 55, in register
+    form.save()
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/src/DjangoStripePayments/accounts/forms.py", line 50, in save
+    instance.save()
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: accounts_user.username
+[18/Jul/2016 10:12:15] INFO [accounts.views:16] Handling register GET request
+[18/Jul/2016 10:12:15] WARNING [py.warnings:89] /Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django_forms_bootstrap/templatetags/bootstrap_tags.py:28: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(c)
+
+[18/Jul/2016 10:12:34] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:12:41] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:12:42] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:12:43] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/customers HTTP/1.1" 200 1399
+[18/Jul/2016 10:12:43] INFO [stripe:252] POST https://api.stripe.com/v1/customers 200
+[18/Jul/2016 10:12:43] DEBUG [stripe:256] API request to https://api.stripe.com/v1/customers returned (response code, response body) of (200, '{\n  "id": "cus_8qFEZhBSyYIos2",\n  "object": "customer",\n  "account_balance": 0,\n  "created": 1468836761,\n  "currency": null,\n  "default_source": "card_18YYjsHRSbnb4ulERFi5RrUl",\n  "delinquent": false,\n  "description": "me345@me.com",\n  "discount": null,\n  "email": "me345@me.com",\n  "livemode": false,\n  "metadata": {},\n  "shipping": null,\n  "sources": {\n    "object": "list",\n    "data": [\n      {\n        "id": "card_18YYjsHRSbnb4ulERFi5RrUl",\n        "object": "card",\n        "address_city": null,\n        "address_country": null,\n        "address_line1": null,\n        "address_line1_check": null,\n        "address_line2": null,\n        "address_state": null,\n        "address_zip": null,\n        "address_zip_check": null,\n        "brand": "Visa",\n        "country": "US",\n        "customer": "cus_8qFEZhBSyYIos2",\n        "cvc_check": "pass",\n        "dynamic_last4": null,\n        "exp_month": 1,\n        "exp_year": 2017,\n        "fingerprint": "FJcN215VFRWzooHH",\n        "funding": "credit",\n        "last4": "4242",\n        "metadata": {},\n        "name": null,\n        "tokenization_method": null\n      }\n    ],\n    "has_more": false,\n    "total_count": 1,\n    "url": "/v1/customers/cus_8qFEZhBSyYIos2/sources"\n  },\n  "subscriptions": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/customers/cus_8qFEZhBSyYIos2/subscriptions"\n  }\n}\n')
+[18/Jul/2016 10:12:43] INFO [accounts.views:29] customer {
+  "account_balance": 0, 
+  "created": 1468836761, 
+  "currency": null, 
+  "default_source": "card_18YYjsHRSbnb4ulERFi5RrUl", 
+  "delinquent": false, 
+  "description": "me345@me.com", 
+  "discount": null, 
+  "email": "me345@me.com", 
+  "id": "cus_8qFEZhBSyYIos2", 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "customer", 
+  "shipping": null, 
+  "sources": {
+    "data": [
+      {
+        "address_city": null, 
+        "address_country": null, 
+        "address_line1": null, 
+        "address_line1_check": null, 
+        "address_line2": null, 
+        "address_state": null, 
+        "address_zip": null, 
+        "address_zip_check": null, 
+        "brand": "Visa", 
+        "country": "US", 
+        "customer": "cus_8qFEZhBSyYIos2", 
+        "cvc_check": "pass", 
+        "dynamic_last4": null, 
+        "exp_month": 1, 
+        "exp_year": 2017, 
+        "fingerprint": "FJcN215VFRWzooHH", 
+        "funding": "credit", 
+        "id": "card_18YYjsHRSbnb4ulERFi5RrUl", 
+        "last4": "4242", 
+        "metadata": {}, 
+        "name": null, 
+        "object": "card", 
+        "tokenization_method": null
+      }
+    ], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 1, 
+    "url": "/v1/customers/cus_8qFEZhBSyYIos2/sources"
+  }, 
+  "subscriptions": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/customers/cus_8qFEZhBSyYIos2/subscriptions"
+  }
+}
+[18/Jul/2016 10:12:43] INFO [accounts.views:31] customer.stripe_id = cus_8qFEZhBSyYIos2
+[18/Jul/2016 10:12:43] INFO [accounts.views:35] form.stripe_id=cus_8qFEZhBSyYIos2
+[18/Jul/2016 10:12:43] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:12:43] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:12:44] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:12:44] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYjuHRSbnb4ulEdjgSQWKg",\n  "object": "charge",\n  "amount": 100,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYjuHRSbnb4ulEUdEFaXyc",\n  "captured": true,\n  "created": 1468836762,\n  "currency": "usd",\n  "customer": "cus_8qFEZhBSyYIos2",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYjuHRSbnb4ulEdjgSQWKg/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYjsHRSbnb4ulERFi5RrUl",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qFEZhBSyYIos2",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:12:44] INFO [accounts.views:43] charge {
+  "amount": 100, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYjuHRSbnb4ulEUdEFaXyc", 
+  "captured": true, 
+  "created": 1468836762, 
+  "currency": "usd", 
+  "customer": "cus_8qFEZhBSyYIos2", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYjuHRSbnb4ulEdjgSQWKg", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYjuHRSbnb4ulEdjgSQWKg/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qFEZhBSyYIos2", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYjsHRSbnb4ulERFi5RrUl", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:12:44] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:12:44] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/charges HTTP/1.1" 200 1499
+[18/Jul/2016 10:12:44] INFO [stripe:252] POST https://api.stripe.com/v1/charges 200
+[18/Jul/2016 10:12:44] DEBUG [stripe:256] API request to https://api.stripe.com/v1/charges returned (response code, response body) of (200, '{\n  "id": "ch_18YYjvHRSbnb4ulEjLZtHm57",\n  "object": "charge",\n  "amount": 200,\n  "amount_refunded": 0,\n  "application_fee": null,\n  "balance_transaction": "txn_18YYjvHRSbnb4ulENCwqLv8g",\n  "captured": true,\n  "created": 1468836763,\n  "currency": "usd",\n  "customer": "cus_8qFEZhBSyYIos2",\n  "description": null,\n  "destination": null,\n  "dispute": null,\n  "failure_code": null,\n  "failure_message": null,\n  "fraud_details": {},\n  "invoice": null,\n  "livemode": false,\n  "metadata": {},\n  "order": null,\n  "paid": true,\n  "receipt_email": null,\n  "receipt_number": null,\n  "refunded": false,\n  "refunds": {\n    "object": "list",\n    "data": [],\n    "has_more": false,\n    "total_count": 0,\n    "url": "/v1/charges/ch_18YYjvHRSbnb4ulEjLZtHm57/refunds"\n  },\n  "shipping": null,\n  "source": {\n    "id": "card_18YYjsHRSbnb4ulERFi5RrUl",\n    "object": "card",\n    "address_city": null,\n    "address_country": null,\n    "address_line1": null,\n    "address_line1_check": null,\n    "address_line2": null,\n    "address_state": null,\n    "address_zip": null,\n    "address_zip_check": null,\n    "brand": "Visa",\n    "country": "US",\n    "customer": "cus_8qFEZhBSyYIos2",\n    "cvc_check": "pass",\n    "dynamic_last4": null,\n    "exp_month": 1,\n    "exp_year": 2017,\n    "fingerprint": "FJcN215VFRWzooHH",\n    "funding": "credit",\n    "last4": "4242",\n    "metadata": {},\n    "name": null,\n    "tokenization_method": null\n  },\n  "source_transfer": null,\n  "statement_descriptor": null,\n  "status": "succeeded"\n}\n')
+[18/Jul/2016 10:12:44] INFO [accounts.views:51] charge_two {
+  "amount": 200, 
+  "amount_refunded": 0, 
+  "application_fee": null, 
+  "balance_transaction": "txn_18YYjvHRSbnb4ulENCwqLv8g", 
+  "captured": true, 
+  "created": 1468836763, 
+  "currency": "usd", 
+  "customer": "cus_8qFEZhBSyYIos2", 
+  "description": null, 
+  "destination": null, 
+  "dispute": null, 
+  "failure_code": null, 
+  "failure_message": null, 
+  "fraud_details": {}, 
+  "id": "ch_18YYjvHRSbnb4ulEjLZtHm57", 
+  "invoice": null, 
+  "livemode": false, 
+  "metadata": {}, 
+  "object": "charge", 
+  "order": null, 
+  "paid": true, 
+  "receipt_email": null, 
+  "receipt_number": null, 
+  "refunded": false, 
+  "refunds": {
+    "data": [], 
+    "has_more": false, 
+    "object": "list", 
+    "total_count": 0, 
+    "url": "/v1/charges/ch_18YYjvHRSbnb4ulEjLZtHm57/refunds"
+  }, 
+  "shipping": null, 
+  "source": {
+    "address_city": null, 
+    "address_country": null, 
+    "address_line1": null, 
+    "address_line1_check": null, 
+    "address_line2": null, 
+    "address_state": null, 
+    "address_zip": null, 
+    "address_zip_check": null, 
+    "brand": "Visa", 
+    "country": "US", 
+    "customer": "cus_8qFEZhBSyYIos2", 
+    "cvc_check": "pass", 
+    "dynamic_last4": null, 
+    "exp_month": 1, 
+    "exp_year": 2017, 
+    "fingerprint": "FJcN215VFRWzooHH", 
+    "funding": "credit", 
+    "id": "card_18YYjsHRSbnb4ulERFi5RrUl", 
+    "last4": "4242", 
+    "metadata": {}, 
+    "name": null, 
+    "object": "card", 
+    "tokenization_method": null
+  }, 
+  "source_transfer": null, 
+  "statement_descriptor": null, 
+  "status": "succeeded"
+}
+[18/Jul/2016 10:12:45] INFO [accounts.views:87] Handling login GET request
+[18/Jul/2016 10:16:36] INFO [accounts.views:16] Handling register GET request
+[18/Jul/2016 10:16:36] WARNING [py.warnings:89] /Users/lukerickard/Dropbox/CodeInstitute3/Virtual_Envs/django_default/lib/python2.7/site-packages/django_forms_bootstrap/templatetags/bootstrap_tags.py:28: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(c)
+
+[18/Jul/2016 10:16:58] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:17:05] INFO [accounts.views:16] Handling register POST request
+[18/Jul/2016 10:17:05] INFO [requests.packages.urllib3.connectionpool:788] Starting new HTTPS connection (1): api.stripe.com
+[18/Jul/2016 10:17:06] DEBUG [requests.packages.urllib3.connectionpool:395] "POST /v1/customers HTTP/1.1" 200 1399
+[18/Jul/2016 10:17:06] INFO [stripe:252] POST https://api.stripe.com/v1/customers 200

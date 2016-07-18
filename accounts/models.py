@@ -2,11 +2,12 @@ from __future__ import unicode_literals
 
 from django.contrib.auth.models import AbstractUser, UserManager
 from django.utils import timezone
+from django.db import models
+
 
 # Create your models here.
 class AccountUserManager(UserManager):
-    def _create_user(self, username, email, password,
-                     is_staff, is_superuser, **extra_fields):
+    def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):
         """
        Creates and saves a User with the given username, email and password.
        """
@@ -26,6 +27,7 @@ class AccountUserManager(UserManager):
 
 
 class User(AbstractUser):
+    stripe_id = models.CharField(max_length=40, default='')
     # now that we've abstracted this class we can add any
     # number of custom attribute to our user class
 
