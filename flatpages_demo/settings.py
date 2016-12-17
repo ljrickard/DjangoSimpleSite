@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '*9g*y%(j4im%g3&gqeo$-#o91)rmo*a!6oyq3ylcj00x!i4h2f'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -39,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hello',
     'accounts',
-    'django_forms_bootstrap'
+    'django_forms_bootstrap',
+    'paypal_store',
+    'paypal.standard.ipn',
+    'products'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -74,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'flatpages_demo.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -84,7 +84,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -104,7 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -117,7 +115,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -136,7 +133,6 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_dX3QnLazgPimtUoJAm
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_bWYy6QttBT8hDC6fqEQVKiOl')
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-
 
 LOGGING = {
     'version': 1,
@@ -171,6 +167,7 @@ LOGGING = {
     }
 }
 
-
-
-
+# PayPay Settings
+SITE_URL = 'http:127.0.01:8000'
+PAYPAL_NOTIFY_URL = 'http:127.0.01:8000/54582507-5e8e-4bec-97ff-6195e3010ac8/'
+PAYPAL_RECEIVER_EMAIL = 'luke.rickard-fac@gmail.com'
